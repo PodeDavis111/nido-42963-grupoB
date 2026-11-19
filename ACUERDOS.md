@@ -10,14 +10,12 @@ Si un acuerdo cambia, se actualiza aqui **con fecha**. Nada de borrar: se tacha 
 
 ## Como trabajamos
 
-- Horarios de trabajo y de reunion:
-- Canal de comunicacion (WhatsApp, Discord...):
-- Tiempo maximo para responder un mensaje del equipo:
-- Las decisiones se registran en: (Issue / pull request / acta)
-- Si no estamos de acuerdo, decidimos asi:
-- Si alguien no puede cumplir una tarea, avisa con esta anticipacion:
-
-## Actas de reuniones
+- Horarios de trabajo y de reunion: Se coordinaran mediante WhatsApp, segun la disponibilidad del equipo.
+- Canal de comunicacion: WhatsApp.
+- Tiempo maximo para responder un mensaje del equipo: 7 horas.
+- Las decisiones se registran en: GitHub Issues, pull requests y actas de reuniones.
+- Si no estamos de acuerdo, decidimos asi: Mediante votacion por mayoria de votos.
+- Si alguien no puede cumplir una tarea, avisa con esta anticipacion: Como minimo 1 dia antes de la fecha establecida.
 
 ### Acta 1 · fecha: ____ · medio: presencial / virtual
 - Asistentes:
