@@ -1,0 +1,18 @@
+arbol
+usuarios
+perfil @mango
+seguidores @mango
+mutuos @mango
+popular
+alcance @mango
+llega @andes @pixel
+llega @pixel @andes
+registrar @kiwi
+seguir @kiwi @andes
+dejar @nova @pixel
+alcance @mango
+reporte
+guardar
+cargar
+arbol
+salir

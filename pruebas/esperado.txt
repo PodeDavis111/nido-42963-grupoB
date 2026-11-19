@@ -1,0 +1,11 @@
+Preorden: @mango @byte @andes @cuy @lofi @pixel @nova @zenit
+Nodos: 8 | altura: 4 | hojas: 4
+Alcance de @mango: @byte @cuy @andes @pixel @nova @zenit @lofi | alcanzados: 7
+Un post de @andes llega a @pixel: no
+Un post de @pixel llega a @andes: si
+Alcance de @mango: @byte @cuy @andes @kiwi @pixel | alcanzados: 5
+Cuentas: 9 | seguimientos: 10 | pares mutuos: 3
+Arbol: altura 5 | hojas 4
+Preorden: @mango @byte @andes @cuy @lofi @kiwi @pixel @nova @zenit
+Nodos: 9 | altura: 5 | hojas: 4
+Nodos liberados: 9. Hasta pronto.
