@@ -1,4 +1,4 @@
-# Nido · comunidad `<nido-nombre-de-su-ave>`
+# Nido · comunidad `nido-lechuza`
 
 ![Nido CI](../../actions/workflows/nido.yml/badge.svg)
 
@@ -6,19 +6,19 @@ Red social de consola hecha en C++ con un **arbol binario de busqueda** (las cue
 por @usuario), un **grafo dirigido** en matriz de adyacencia (quien sigue a quien), **recursion**
 (recorridos del arbol y DFS para el alcance de un post) y persistencia en `nido.txt`.
 
-Estructura de Datos · Evaluacion C2 · Unidad 4 · 2026-20 · NRC `<NRC>` · Grupo `<letra>`
+Estructura de Datos · Evaluacion C2 · Unidad 4 · 2026-20 · NRC `42963` · Grupo `B`
 
 ## Equipo
 
 | Integrante | Usuario de GitHub | Rol | Requisitos |
 |---|---|---|---|
-|  |  | Lider (scrum) |  |
-|  |  | Dev · arbol | R1, R2 |
-|  |  | Dev · grafo | R3, R4 |
-|  |  | Dev · alcance y archivo | R5, R6 |
-|  |  | QA y documentacion | R7, pruebas |
+| Deivis Quispe Chaucca | PodeDavis111 | Lider (scrum) y R1 |  |
+| Zoe Li Chura Paucar |73274358-wq  | Dev · arbol | R2 |
+| Johana Mayra Ccamaque Ala | 72167586-design | Dev · grafo | R3, R4 |
+| Brayam Mamani Quilla | YuberMQ | Dev · alcance y archivo | R5, R6 |
+| Yerik Angel Mamani Quenallata | yerikangel | QA y documentacion | R7, pruebas |
 
-Tablero del equipo: `<enlace a GitHub Projects>` · Presentacion: `<enlace>`
+Tablero del equipo: `https://github.com/users/PodeDavis111/projects/2/views/1` · Presentacion: `https://github.com/PodeDavis111/nido-42963-grupoB`
 
 ## Como compilar y ejecutar
 
