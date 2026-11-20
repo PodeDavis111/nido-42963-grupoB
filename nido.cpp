@@ -232,6 +232,18 @@ int main() {
 
         if (orden == "registrar") {
             // TODO R1d
+            if(a1 ==""){
+            	cout <<"Uso: registrar @usuario"<< endl;
+            	
+			} else{
+				if(registrarUsuario(raiz,a1)){
+	            	cout << "Registrado: "<< a1 << " (id "<< nUsuarios - 1<<")"<< endl;
+	            	
+				}else{
+					cout << "E: No se pudo registrar "<< a1 << endl ;
+					
+				}
+			}          
         }
         else if (orden == "perfil") {
             NodoUsuario *u = buscar(raiz, a1);
