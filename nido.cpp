@@ -98,7 +98,13 @@ bool insertar(NodoUsuario *&r, NodoUsuario *nuevo) {
 
 bool registrarUsuario(NodoUsuario *&raiz, string u) {
     // TODO R1c
-    return false;
+    if (!esUsuarioValido(u) || nUsuarios == MAX || buscar(raiz,u) != nullptr) return false;
+	 
+	NodoUsuario *nuevo = crearUsuario(u, nUsuarios);
+	insertar(raiz,nuevo);
+    porId[nUsuarios] = nuevo;
+	nUsuarios++;
+    return true;
 }
 
 void enorden(NodoUsuario *r) {
