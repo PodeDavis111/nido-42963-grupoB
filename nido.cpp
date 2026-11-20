@@ -73,17 +73,38 @@ void imprimirMarcados(string titulo, bool marca[]) {
 
 NodoUsuario* buscar(NodoUsuario *r, string u) {
     // TODO R1a
-    return nullptr;
+    if (r == nullptr || r->usuario == u) return r;
+    
+	if (u < r->usuario) return buscar(r->izq, u);
+	
+	return buscar(r->der, u);
+
 }
 
 bool insertar(NodoUsuario *&r, NodoUsuario *nuevo) {
     // TODO R1b
-    return false;
+    if (r == nullptr) { 
+		r = nuevo; 
+		return true; 
+	}
+    
+	if (nuevo->usuario == r->usuario) return false;
+	
+	if (nuevo->usuario < r->usuario) return insertar(r->izq, nuevo);
+	
+	return insertar(r->der, nuevo);
+   
 }
 
 bool registrarUsuario(NodoUsuario *&raiz, string u) {
     // TODO R1c
-    return false;
+    if (!esUsuarioValido(u) || nUsuarios == MAX || buscar(raiz,u) != nullptr) return false;
+	 
+	NodoUsuario *nuevo = crearUsuario(u, nUsuarios);
+	insertar(raiz,nuevo);
+    porId[nUsuarios] = nuevo;
+	nUsuarios++;
+    return true;
 }
 
 void enorden(NodoUsuario *r) {
@@ -211,6 +232,18 @@ int main() {
 
         if (orden == "registrar") {
             // TODO R1d
+            if(a1 ==""){
+            	cout <<"Uso: registrar @usuario"<< endl;
+            	
+			} else{
+				if(registrarUsuario(raiz,a1)){
+	            	cout << "Registrado: "<< a1 << " (id "<< nUsuarios - 1<<")"<< endl;
+	            	
+				}else{
+					cout << "E: No se pudo registrar "<< a1 << endl ;
+					
+				}
+			}          
         }
         else if (orden == "perfil") {
             NodoUsuario *u = buscar(raiz, a1);
