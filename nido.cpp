@@ -30,14 +30,20 @@ int sigue[MAX][MAX];
 NodoUsuario *porId[MAX];
 int nUsuarios = 0;
 
-// ===== FICHA =====
-const string COMUNIDAD = "nido-de-prueba";
-const int N_U = 8;
-string fUsuario[N_U] = {"@mango", "@byte", "@pixel", "@andes", "@cuy", "@nova", "@zenit", "@lofi"};
-const int N_S = 10;
-string fSigue[N_S][2] = {{"@byte", "@mango"}, {"@pixel", "@mango"}, {"@mango", "@byte"}, {"@cuy", "@byte"},
-                         {"@andes", "@cuy"}, {"@nova", "@pixel"}, {"@zenit", "@nova"}, {"@mango", "@pixel"},
-                         {"@lofi", "@zenit"}, {"@zenit", "@lofi"}};
+// ===== FICHA ===== 
+const string COMUNIDAD = "nido-lechuza";
+const int N_U = 10;
+string fUsuario[N_U] = {"@lago", "@gif", "@vapor", "@rock", "@indie",
+ "@nachos", "@salsa", "@bambu", "@trueno", "@hielo"};
+const int N_S = 16;
+string fSigue[N_S][2] = {{"@indie", "@nachos"}, {"@bambu", "@indie"},
+ {"@bambu", "@nachos"}, {"@gif", "@hielo"},
+ {"@lago", "@vapor"}, {"@salsa", "@rock"},
+ {"@bambu", "@hielo"}, {"@hielo", "@nachos"},
+ {"@rock", "@lago"}, {"@salsa", "@bambu"},
+ {"@vapor", "@nachos"}, {"@hielo", "@bambu"},
+ {"@vapor", "@trueno"}, {"@trueno", "@bambu"},
+ {"@bambu", "@trueno"}, {"@trueno", "@salsa"}};
 // =================
 
 NodoUsuario* crearUsuario(string usuario, int id) {
