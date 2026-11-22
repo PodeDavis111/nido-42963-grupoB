@@ -7,7 +7,7 @@
    Semestre   : 2026-20
    Compilador : Dev-C++ (MinGW / GCC, C++11 o superior)
    NRC        :
-   Grupo      :
+   Grupo      : Grupo B
    Integrantes:
    ============================================================= */
 
@@ -156,7 +156,11 @@ int contarSiguiendo(int id) {
 
 int contarSeguidores(int id) {
     // TODO R3a
-    return 0;
+	int k=0;
+	for(int x=0;x<nUsuarios;x++)
+		if(sigue[x][id]==1)
+			k=k+1;
+    return k;
 }
 
 void difundir(int v, bool visto[], bool imprimir) {
@@ -280,6 +284,12 @@ int main() {
         }
         else if (orden == "seguir") {
             // TODO R3b
+			if(a1==""||a2==""){
+				cout<<"Uso: seguir @a @b<<endl;
+			}else{
+				NodoUsuario *a=buscar(raiz,a1);
+				NodoUsuario *b
+					}
         }
         else if (orden == "dejar") {
             // TODO R3c
