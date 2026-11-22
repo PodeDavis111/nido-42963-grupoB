@@ -336,10 +336,33 @@ int main() {
         }
         else if (orden == "mutuos") {
             // TODO R4a
-        }
+			NodoUsuario *u=buscar(raiz,a1);
+			if(u==nullptr) cout<<"E: no existe "<<a1<<endl;
+			else{
+				bool marca[MAX]={false};
+				for(int x=0;x<nUsuarios;x++){
+					if(sigue[u->id[x]==1 && sigue[x][u->id]==1)
+						marca[x]=true;
+				}
+				imprimirMarcados("mutuos de "+u->usuario,marca);
+			}
+		}
         else if (orden == "popular") {
             // TODO R4b
-        }
+			if(nUsuarios==0) cout<<"No hay usuarios registrados"<<endl;
+			else{
+				int idMax=0;
+				int maxSeg=contarSeguidores(0);
+				for(int x=1;x<nUsuarios;x++){
+					int seg=contarSeguidores(x);
+					if(seg>maxSeg){
+						maxSeg=seg;
+						idMax=x;
+					}
+				}
+				cout<<"Mas popular: <<porId[idMax]->usuario<<" | seguidores: "<<maxSeg<<endl;
+			}
+		}
         else if (orden == "alcance") {
             // TODO R5b
         }
