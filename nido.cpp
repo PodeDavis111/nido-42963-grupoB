@@ -288,12 +288,33 @@ int main() {
 				cout<<"Uso: seguir @a @b<<endl;
 			}else{
 				NodoUsuario *a=buscar(raiz,a1);
-				NodoUsuario *b
-					}
+				NodoUsuario *b=buscar(raiz,a2);
+				if(a==nullptr) cout<<"E: no existe "<<a1<<endl;
+				else if(b=nullptr) cout<<"E: no existe "<<a2<<endl;
+				else if(a->id==b->) cout<<"E: no puedes seguirte a ti mismo"<<endl;
+				else if(sigue[a->id][b->id]==1) cout<<"E: <<a1<<" ya sigue a "<<a2<<endl;
+				else{
+					sigue[a->id][b->id]==1;
+					cout<<a->usuario<<" sigue ahora a "<<b->usuario<<endl;
+				}
+		    }
         }
         else if (orden == "dejar") {
             // TODO R3c
-        }
+			if(a1==""||a2==""){
+				cout<<"Uso: dejar @a @b"<<endl;
+			}else{
+				NodoUsuario *a=buscar(raiz,a1);
+				NodoUsuario *b=buscar(raiz,a2);
+				if(a==nulptr) cout<<"E: no existe "<<a1<<endl;
+				else if(b==nullptr) cout<<"E: no existe "<<a2<<endl;
+				else if(sigue[a->id][b->id]==0 cout<<"E: "<<a1<<" no sigue a "<<a2<<endl;
+				else{
+					sigue[a->id][b->id]=0;
+					cout<<a->usuario<<" dejo de seguir a "<<b->usuario<<endl;
+				}
+			}
+		}
         else if (orden == "siguiendo") {
             NodoUsuario *u = buscar(raiz, a1);
             if (u == nullptr) cout << "E: No existe " << a1 << endl;
