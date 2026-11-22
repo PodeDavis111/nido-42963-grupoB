@@ -326,6 +326,13 @@ int main() {
         }
         else if (orden == "seguidores") {
             // TODO R3d
+			NodoUsuario *u=buscar(raiz,a1);
+			if(u==nullptr) cout<<"E: no existe "<<a1<<endl;
+			else{
+				bool marca[MAX]={false};
+				for(int x=0;nUsuarios;x++) if(sigue[x][u->id]==1) marca[x]=true;
+				imprimirMarcados("Seguidores de "+u->usuario,marca);
+			}
         }
         else if (orden == "mutuos") {
             // TODO R4a
