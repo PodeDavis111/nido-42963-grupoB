@@ -292,7 +292,7 @@ int main() {
 				if(a==nullptr) cout<<"E: no existe "<<a1<<endl;
 				else if(b==nullptr) cout<<"E: no existe "<<a2<<endl;
 				else if(a->id==b->id) cout<<"E: no puedes seguirte a ti mismo"<<endl;
-				else if(sigue[a->id][b->id]=1) cout<<"E: <<a1<<" ya sigue a "<<a2<<endl;
+				else if(sigue[a->id][b->id]=1) cout<<"E: "<<a1<<" ya sigue a "<<a2<<endl;
 				else{
 					sigue[a->id][b->id]==1;
 					cout<<a->usuario<<" sigue ahora a "<<b->usuario<<endl;
@@ -360,7 +360,7 @@ int main() {
 						idMax=x;
 					}
 				}
-				cout<<"Mas popular": <<porId[idMax]->usuario<<" | seguidores: "<<maxSeg<<endl;
+				cout<<"Mas popular: " <<porId[idMax]->usuario<<" | seguidores: "<<maxSeg<<endl;
 			}
 		}
         else if (orden == "alcance") {
