@@ -306,9 +306,9 @@ int main() {
 			}else{
 				NodoUsuario *a=buscar(raiz,a1);
 				NodoUsuario *b=buscar(raiz,a2);
-				if(a==nulptr) cout<<"E: no existe "<<a1<<endl;
+				if(a==nullptr) cout<<"E: no existe "<<a1<<endl;
 				else if(b==nullptr) cout<<"E: no existe "<<a2<<endl;
-				else if(sigue[a->id][b->id]==0 cout<<"E: "<<a1<<" no sigue a "<<a2<<endl;
+				else if(sigue[a->id][b->id]==0) cout<<"E: "<<a1<<" no sigue a "<<a2<<endl;
 				else{
 					sigue[a->id][b->id]=0;
 					cout<<a->usuario<<" dejo de seguir a "<<b->usuario<<endl;
@@ -330,7 +330,7 @@ int main() {
 			if(u==nullptr) cout<<"E: no existe "<<a1<<endl;
 			else{
 				bool marca[MAX]={false};
-				for(int x=0;nUsuarios;x++) if(sigue[x][u->id]==1) marca[x]=true;
+				for(int x=0;x<nUsuarios;x++) if(sigue[x][u->id]==1) marca[x]=true;
 				imprimirMarcados("Seguidores de "+u->usuario,marca);
 			}
         }
@@ -341,7 +341,7 @@ int main() {
 			else{
 				bool marca[MAX]={false};
 				for(int x=0;x<nUsuarios;x++){
-					if(sigue[u->id[x]==1 && sigue[x][u->id]==1)
+					if(sigue[u->id][x]==1 && sigue[x][u->id]==1)
 						marca[x]=true;
 				}
 				imprimirMarcados("mutuos de "+u->usuario,marca);
@@ -360,7 +360,7 @@ int main() {
 						idMax=x;
 					}
 				}
-				cout<<"Mas popular: <<porId[idMax]->usuario<<" | seguidores: "<<maxSeg<<endl;
+				cout<<"Mas popular": <<porId[idMax]->usuario<<" | seguidores: "<<maxSeg<<endl;
 			}
 		}
         else if (orden == "alcance") {
