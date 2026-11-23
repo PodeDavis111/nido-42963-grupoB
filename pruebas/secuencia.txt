@@ -1,18 +1,27 @@
 arbol
 usuarios
-perfil @mango
-seguidores @mango
-mutuos @mango
+perfil @hielo
+seguidores @hielo
+siguiendo @hielo
+mutuos @hielo
 popular
-alcance @mango
-llega @andes @pixel
-llega @pixel @andes
-registrar @kiwi
-seguir @kiwi @andes
-dejar @nova @pixel
-alcance @mango
+alcance @lago
+llega @lago @trueno
+llega @vapor @nachos
+registrar @wifi
+registrar @wifi
+registrar @wifi
+seguir @wifi @trueno
+seguir @hielo @wifi
+seguir @hielo @wifi
+dejar @vapor @trueno
+alcance @lago
+seguidores @nachos
+popular
+arbol
 reporte
 guardar
 cargar
-arbol
+usuarios
+reporte
 salir
