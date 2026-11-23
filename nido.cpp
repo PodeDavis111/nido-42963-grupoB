@@ -285,14 +285,14 @@ int main() {
         else if (orden == "seguir") {
             // TODO R3b
 			if(a1==""||a2==""){
-				cout<<"Uso: seguir @a @b<<endl;
+				cout<<"Uso: seguir @a @b"<<endl;
 			}else{
 				NodoUsuario *a=buscar(raiz,a1);
 				NodoUsuario *b=buscar(raiz,a2);
 				if(a==nullptr) cout<<"E: no existe "<<a1<<endl;
-				else if(b=nullptr) cout<<"E: no existe "<<a2<<endl;
-				else if(a->id==b->) cout<<"E: no puedes seguirte a ti mismo"<<endl;
-				else if(sigue[a->id][b->id]==1) cout<<"E: <<a1<<" ya sigue a "<<a2<<endl;
+				else if(b==nullptr) cout<<"E: no existe "<<a2<<endl;
+				else if(a->id==b->id) cout<<"E: no puedes seguirte a ti mismo"<<endl;
+				else if(sigue[a->id][b->id]=1) cout<<"E: <<a1<<" ya sigue a "<<a2<<endl;
 				else{
 					sigue[a->id][b->id]==1;
 					cout<<a->usuario<<" sigue ahora a "<<b->usuario<<endl;
