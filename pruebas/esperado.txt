@@ -1,11 +1,31 @@
-Preorden: @mango @byte @andes @cuy @lofi @pixel @nova @zenit
-Nodos: 8 | altura: 4 | hojas: 4
-Alcance de @mango: @byte @cuy @andes @pixel @nova @zenit @lofi | alcanzados: 7
-Un post de @andes llega a @pixel: no
-Un post de @pixel llega a @andes: si
-Alcance de @mango: @byte @cuy @andes @kiwi @pixel | alcanzados: 5
-Cuentas: 9 | seguimientos: 10 | pares mutuos: 3
-Arbol: altura 5 | hojas 4
-Preorden: @mango @byte @andes @cuy @lofi @kiwi @pixel @nova @zenit
-Nodos: 9 | altura: 5 | hojas: 4
-Nodos liberados: 9. Hasta pronto.
+Preorden: @lago @gif @bambu @indie @hielo @vapor @rock @nachos @salsa @trueno.
+Nodos: 10, altura: 5, hojas: 4. 
+Usuarios (enorden): @bambu @gif @hielo @indie @lago @nachos @rock @salsa @trueno @vapor
+@hielo | id 9 | seguidores 2 | siguiendo 2
+Seguidores de @hielo (2): @gif @bambu
+@hielo sigue a (2): @nachos @bambu
+mutuos de @hielo (1): @bambu
+Mas popular: @nachos | seguidores: 4
+Alcance de @lago: @rock @salsa @trueno @vapor | alcanzados: 4
+Un post de @lago llega a @trueno: si
+Un post de @vapor llega a @nachos: no
+Registrado: @wifi (id 10)
+E: No se pudo registrar @wifi
+E: No se pudo registrar @wifi
+@wifi sigue ahora a @trueno
+@hielo sigue ahora a @wifi
+E: @hielo ya sigue a @wifi
+@vapor dejo de seguir a @trueno
+Alcance de @lago: @rock @salsa @trueno @wifi | alcanzados: 4
+Seguidores de @nachos (4): @vapor @indie @bambu @hielo
+Mas popular: @nachos | seguidores: 4
+Preorden: @lago @gif @bambu @hielo @indie @vapor @rock @nachos @salsa @trueno @wifi
+Nodos: 11 | altura: 5 | hojas: 5
+Cuentas: 11 | seguimientos: 17 | pares mutuos: 2
+Arbol: altura 5 | hojas 5
+Guardado: 11 cuentas y 17 seguimientos en nido.txt
+Cargado: 11 cuentas y 17 seguimientos | altura 5
+Usuarios (enorden): @bambu @gif @hielo @indie @lago @nachos @rock @salsa @trueno @vapor @wifi
+Cuentas: 11 | seguimientos: 17 | pares mutuos: 2
+Arbol: altura 5 | hojas 5
+Nodos liberados: 11. Hasta pronto.
