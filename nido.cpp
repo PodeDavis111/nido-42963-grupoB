@@ -165,8 +165,14 @@ int contarSeguidores(int id) {
 
 void difundir(int v, bool visto[], bool imprimir) {
     // TODO R5a
+    visto[v] = true;
+    for (int x = 0; x < nUsuarios; x++){
+    	if (sigue[x][v] == 1 && !visto[x]){
+    		if (imprimir) cout << " " << porId[x]->usuario;
+    		difundir(x, visto, imprimir);
+		}
+	}
 }
-
 /* ---------- Archivos y memoria ---------- */
 
 void guardarPreorden(NodoUsuario *r, ofstream &f) {
