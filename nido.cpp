@@ -177,6 +177,10 @@ void difundir(int v, bool visto[], bool imprimir) {
 
 void guardarPreorden(NodoUsuario *r, ofstream &f) {
     // TODO R6a
+    if ( r == nullptr) return;
+    f << "U" << r->usuario << " " << r->id << endl;
+    guardarPreorden(r->izq, f);
+    guardarPreorden(r->der, f);
 }
 
 int liberar(NodoUsuario *r) {
