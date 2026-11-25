@@ -371,9 +371,34 @@ int main() {
 		}
         else if (orden == "alcance") {
             // TODO R5b
+            NodoUsuario *u = buscar(raiz, a1);
+            if (u == nullptr) cout << "E: No existe " << a1 << endl;
+            else{
+            	bool visto[MAX] = {false};
+            	cout << "Alcance de  " << u->usuario << ":";
+            	difundir (u->id, visto, true);
+            	int k=0;
+            	for (int x = 0; x< nUsuarios; x++) 
+            	if (visto[x]) k++;
+            	if (k - 1 == 00) cout << "(nadie)";
+            	cout  << " | alcanzados: " << k - 1 << endl;
+			}
         }
         else if (orden == "llega") {
             // TODO R5c
+            if (a1 == " " || a2 == " ") cout << "Uso: llega @a @b" << endl;
+            else{
+            	NodoUsuario *a = buscar(raiz, a1);
+            	NodoUsuario *b = buscar(raiz, a2);
+            	if ( a == nullptr) cout << "E: No existe " << a1 << endl;
+            	else if (b == nullptr) cout << "E: No existe " <<a2 <<endl;
+            	else if (a == b) cout << "E: Elijan dos cuentas distintas" <<endl;
+            	else {
+            		bool visto[MAX] = {false};
+            		difundir(a->id, visto, false);
+            		cout << "Un post de " << a1 << "llega a " << a2 << ": " << (visto[b->id] ? "si" : "no") << endl;
+				}
+			}
         }
         else if (orden == "guardar") {
             ofstream f(ARCHIVO);
