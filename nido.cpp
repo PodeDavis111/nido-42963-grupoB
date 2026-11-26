@@ -184,8 +184,12 @@ void guardarPreorden(NodoUsuario *r, ofstream &f) {
 }
 
 int liberar(NodoUsuario *r) {
-    // TODO R7a
-    return 0;
+    // R7a: liberar en postorden (hijos primero, luego el nodo)
+    if (r == nullptr) return 0;               // caso base: arbol vacio
+    int k = liberar(r->izq);                  // libera subarbol izquierdo
+    k += liberar(r->der);                     // libera subarbol derecho
+    delete r;                                 // libera el nodo actual
+    return k + 1;                             // cuenta este nodo
 }
 
 /* ---------- Ordenes ---------- */
@@ -423,8 +427,31 @@ int main() {
             }
         }
         else if (orden == "reporte") {
-            // TODO R7b
+            // R7b: resumen de la comunidad
+            if (nUsuarios == 0) cout << "No hay usuarios registrados" << endl;
+            else {
+                int seguimientos = 0;
+                for (int i = 0; i < nUsuarios; i++) seguimientos += contarSiguiendo(i);
+                int idMax = 0, maxSeg = contarSeguidores(0);
+                for (int x = 1; x < nUsuarios; x++) {
+                    int seg = contarSeguidores(x);
+                    if (seg > maxSeg) { maxSeg = seg; idMax = x; }
+                }
+                bool sinSeg[MAX] = {false}, sinSig[MAX] = {false};
+                for (int x = 0; x < nUsuarios; x++) {
+                    if (contarSeguidores(x) == 0) sinSeg[x] = true;
+                    if (contarSiguiendo(x) == 0) sinSig[x] = true;
+                }
+                cout << "Reporte de la comunidad " << COMUNIDAD << endl;
+                cout << "Cuentas: " << contar(raiz) << " | seguimientos: " << seguimientos << endl;
+                cout << "Arbol: altura " << altura(raiz) << " | hojas " << hojas(raiz) << endl;
+                cout << "Mas popular: " << porId[idMax]->usuario << " | seguidores: " << maxSeg << endl;
+                imprimirMarcados("Sin seguidores", sinSeg);
+                imprimirMarcados("No siguen a nadie", sinSig);
+            }
         }
+            
+        
         else if (orden == "ayuda") ayuda();
         else if (orden == "salir") break;
         else cout << orden << ": orden no encontrada (escribe ayuda)" << endl;
