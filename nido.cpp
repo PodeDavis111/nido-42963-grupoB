@@ -422,12 +422,40 @@ int main() {
             f.close();
             cout << "Guardado: " << contar(raiz) << " cuentas y " << m << " seguimientos en " << ARCHIVO << endl;
         }
-        else if (orden == "cargar") {
+               else if (orden == "cargar") {
             ifstream f(ARCHIVO);
             if (!f) cout << "E: No existe " << ARCHIVO << endl;
             else {
                 int m = 0;
                 // TODO R6c
+                // borrar la comudidad actual
+                liberar (raiz); raiz = nullptr; nUsuarios = 0;
+                for (int i = 0; i < MAX; i++){
+                	porId[i] = nullptr;
+                	for (int j = 0; j < MAX; j++) sigue [i][j] = 0;
+				}
+				// reconstruir: U crea el nodo con su id S pone la casilla
+				string tipo;
+				while (f >> tipo) {
+					if (tipo == "U"){
+						string u ; int id;
+						f >> u >> id;
+						if (id < 0 || id >= MAX) continue;
+						NodoUsuario *n = crearUsuario(u, id);
+						if (insertar(raiz, n)) {
+							porId[id] = n;
+							if (id + 1 > nUsuarios) nUsuarios = id + 1;
+						} else delete n;
+					} else if (tipo =="S"){
+						string ua, ub;
+						f >> ua >> ub;
+						NodoUsuario *a = buscar(raiz, ua);
+						NodoUsuario *b = buscar(raiz, ub);
+						if (a != nullptr && b != nullptr){
+							sigue [a->id][b->id] = 1; m++;
+						}
+					}
+				}
                 cout << "Cargado: " << contar(raiz) << " cuentas y " << m << " seguimientos | altura "
                      << altura(raiz) << endl;
             }
