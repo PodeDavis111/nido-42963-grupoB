@@ -78,7 +78,6 @@ NodoUsuario* buscar(NodoUsuario *r, string u) {
 	if (u < r->usuario) return buscar(r->izq, u);
 	
 	return buscar(r->der, u);
-
 }
 
 bool insertar(NodoUsuario *&r, NodoUsuario *nuevo) {
@@ -178,7 +177,7 @@ void difundir(int v, bool visto[], bool imprimir) {
 void guardarPreorden(NodoUsuario *r, ofstream &f) {
     // TODO R6a
     if ( r == nullptr) return;
-    f << "U" << r->usuario << " " << r->id << endl;
+    f << "U " << r->usuario << " " << r->id << endl;
     guardarPreorden(r->izq, f);
     guardarPreorden(r->der, f);
 }
@@ -383,8 +382,8 @@ int main() {
             if (u == nullptr) cout << "E: No existe " << a1 << endl;
             else{
             	bool visto[MAX] = {false};
-            	cout << "Alcance de  " << u->usuario << ":";
-            	difundir (u->id, visto, true);
+            	cout << "Alcance de " << u->usuario << ":";
+            	difundir(u->id, visto, true);
             	int k=0;
             	for (int x = 0; x< nUsuarios; x++) 
             	if (visto[x]) k++;
