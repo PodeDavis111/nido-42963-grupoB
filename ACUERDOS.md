@@ -55,10 +55,32 @@ Si un acuerdo cambia, se actualiza aqui **con fecha**. Nada de borrar: se tacha 
    - **E2:** 22/11/2026 - Diseno e implementacion (v0.5).
    - **E3:** 26/11/2026 - Entrega final y sustentacion (v1.0).
 
-### Acta 2 · fecha: \_\_\_\_
+### Acta 2 - Fecha: 22/11/2026 - Medio: WhatsApp
 
-- Asistentes:
 
-- Temas:
+Asistentes: 5 integrantes.
 
-- Acuerdos:
+
+Deivis Quispe Chaucca
+Zoe Li Chura Paucar
+Johana Mayra Ccamaque Ala
+Brayam Yuber CF Mamani Quilla
+Yerik Angel Mamani Quenallata
+Temas:
+
+
+1. Revisión de los avances de los requisitos R1 al R7.
+2. Coordinación de la integración del código en GitHub.
+3. Revisión de las pruebas del programa Nido.
+4. Organización del informe técnico.
+5. Preparación de la entrega final E3.
+
+
+Acuerdos propuestos para verificar:
+
+
+1. Cada integrante revisará el funcionamiento de su requisito asignado.
+2. Se coordinará la integración de los cambios en la rama "main".
+3. Se comprobará la secuencia oficial, incluyendo entradas inválidas.
+4. Se completará la documentación y las evidencias de pruebas.
+5. Se preparará la sustentación final del 26/11/2026.
