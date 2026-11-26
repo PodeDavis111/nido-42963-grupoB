@@ -413,6 +413,12 @@ int main() {
             int m = 0;
             guardarPreorden(raiz, f);
             // TODO R6b
+		    for (int a = 0; a < nUsuarios; a++)
+	            for (int b = 0; b < nUsuarios; b++)
+		            if (sigue[a][b] == 1){
+		            	f << "S " << porId[a]->usuario << " " << porId[b]->usuario << endl;
+		            	m++;
+					}
             f.close();
             cout << "Guardado: " << contar(raiz) << " cuentas y " << m << " seguimientos en " << ARCHIVO << endl;
         }
