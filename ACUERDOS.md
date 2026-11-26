@@ -61,11 +61,11 @@ Si un acuerdo cambia, se actualiza aqui **con fecha**. Nada de borrar: se tacha 
 Asistentes: 5 integrantes.
 
 
-Deivis Quispe Chaucca
-Zoe Li Chura Paucar
-Johana Mayra Ccamaque Ala
-Brayam Yuber CF Mamani Quilla
-Yerik Angel Mamani Quenallata
+-Deivis Quispe Chaucca
+-Zoe Li Chura Paucar
+-Johana Mayra Ccamaque Ala
+-Brayam Yuber CF Mamani Quilla
+-Yerik Angel Mamani Quenallata
 Temas:
 
 
