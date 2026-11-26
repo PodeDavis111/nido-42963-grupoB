@@ -57,27 +57,20 @@ Si un acuerdo cambia, se actualiza aqui **con fecha**. Nada de borrar: se tacha 
 
 ### Acta 2 - Fecha: 22/11/2026 - Medio: WhatsApp
 
-
 Asistentes: 5 integrantes.
-
-
--Deivis Quispe Chaucca
--Zoe Li Chura Paucar
--Johana Mayra Ccamaque Ala
--Brayam Yuber CF Mamani Quilla
--Yerik Angel Mamani Quenallata
+- Deivis Quispe Chaucca
+- Zoe Li Chura Paucar
+- Johana Mayra Ccamaque Ala
+- Brayam Yuber CF Mamani Quilla
+- Yerik Angel Mamani Quenallata
 Temas:
 
-
-1. Revisión de los avances de los requisitos R1 al R7.
+1. Revisión de los avances de los requisitos R1 al R4.
 2. Coordinación de la integración del código en GitHub.
-3. Revisión de las pruebas del programa Nido.
-4. Organización del informe técnico.
+4. Organización del informe.
 5. Preparación de la entrega final E3.
 
-
 Acuerdos propuestos para verificar:
-
 
 1. Cada integrante revisará el funcionamiento de su requisito asignado.
 2. Se coordinará la integración de los cambios en la rama "main".
